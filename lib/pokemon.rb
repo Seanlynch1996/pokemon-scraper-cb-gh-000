@@ -18,9 +18,8 @@ class Pokemon
     return Pokemon.new(data.flatten[0], data.flatten[1],data.flatten[2],data.flatten[3])
   end
 
-  def self.alter_hp(num, db)
-    #db.execute("UPDATE pokemon SET hp = ?", val)
-    return 0
+  def self.alter_hp(val, db)
+    db.execute("UPDATE pokemon SET hp = ?", val)
   end
 
   def self.id
