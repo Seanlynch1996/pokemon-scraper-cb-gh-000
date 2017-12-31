@@ -63,6 +63,6 @@ describe "Pokemon" do
     
 
     # Now we alter Magikarp's hp
-    
+
   end
 end
